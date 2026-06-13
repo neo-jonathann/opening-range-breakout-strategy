@@ -37,9 +37,9 @@ $$Position\ Size\ (Shares) = \lfloor\frac{\text{Account Equity} \times \text{Ris
 ### 2. Dual-Constraint Safety Net
 To prevent mathematically valid but physically impossible position sizes on hyper-compressed opening ranges, the position-sizing engine enforces a strict safety boundary:
 
-$$\text{Final Position Size} = \min(\text{Sharesby Risk}, \text{Sharesy Leverage})$$
+$$\text{Final Position Size} = \min(\text{Shares by Risk}, \text{Shares by Leverage})$$
 
-Where $\text{Sharesby Leverage}$ enforces the maximum regulatory intraday margin buying power ($4 \times \text{Equity}$).
+Where $\text{Shares by Leverage}$ enforces the maximum regulatory intraday margin buying power ($4 \times \text{Equity}$).
 
 ---
 
